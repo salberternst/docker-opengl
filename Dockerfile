@@ -116,7 +116,7 @@ RUN set -xe; \
     ninja -C build/ -j $(getconf _NPROCESSORS_ONLN); \
     ninja -C build/ install;
 
-RUN rm -f /var/tmp/build 
+RUN rm -rf /var/tmp/build
 
 COPY root / 
 
